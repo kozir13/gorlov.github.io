@@ -1,2 +1,0 @@
-# gorlov.github.io
-labs
