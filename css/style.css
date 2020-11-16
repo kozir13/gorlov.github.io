@@ -1,0 +1,348 @@
+/* Спецификация */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-width: 320px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul, li{
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+h2, h4{
+    text-align: center;
+}
+
+p, div, a, span{
+    line-height: 1.3em;
+}
+
+.title{
+    padding-top: 108px;
+    padding-bottom: 100px;
+    text-align: center;
+    color: #134663;
+}
+
+.tittle__main{
+    font-size: 40px;
+}
+
+.tittle__text{
+    font-size: 24px;
+    max-width: 686px;
+    margin: 40px auto 0;
+}
+
+.tittle__info{
+    font-size: 36px;
+    margin: 40px auto 0;
+}
+
+.pad{
+    padding-bottom: 90px;
+}
+
+.marg{
+    margin-top: 20px;
+}
+
+/* Первый экран */
+.header {
+    background: #9CDBFF;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 214px;
+}
+
+.menu{
+    margin-top: 3px;
+}
+
+.menu__item{
+    margin: 0 28px;
+}
+
+.menu__item a{
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+}
+
+.offer{
+    margin-top: 144px;
+}
+
+.offer__title{
+    margin-bottom: 30px;
+}
+
+.offer__year{
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.offer__text{
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.offer__phone{
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.offer__mail{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.mail{
+    margin-right: 20px;
+}
+
+.fa-envelope, .fa-phone-alt{
+    margin-right: 20px;
+}
+
+.avatar{
+    display: block;
+    margin: 153px auto 0;
+}
+
+/* Второй экран */
+
+.duties{
+    font-weight: 500;
+    font-size: 34px;
+    color: #134663;
+    margin-bottom: 108px;
+}
+
+.icon{
+    font-size: 110px;
+    margin-right: 33px;
+    color: #9CDBFF;
+}
+
+/* Третий экран */
+
+.edu{
+    background: #134663;
+    color: white;
+    padding-top: 265px; 
+    padding-bottom: 265px;
+}
+
+.edu__head{
+    margin-bottom: 28px;
+}
+
+.edu__uni{
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 28px;
+}
+
+.edu__ist{
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 28px;
+}
+
+.edu__year{
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.vstu{
+    display: block;
+    margin: auto;
+}
+
+/* Четвертый экран */
+
+.skills{
+    color: #134663;
+    padding-top: 232px;
+    padding-bottom: 232px;
+    text-align: center;
+}
+
+.space{
+    width: 0px;
+    height: 0px;
+}
+
+/* Пятый экран */
+
+.about{
+    background: #9CDBFF;
+    color: white;
+    padding-top: 287px;
+    padding-bottom: 287px;
+    margin: 0 auto;
+}
+
+.aboutme__text{
+    font-size: 36px;
+}
+
+.fa-ellipsis-v{
+    font-size: 286px;
+    margin-right: 148px;
+}
+
+/* Подвал */
+
+.footer{
+    background: #134663;
+    color: white;
+    text-align: center;
+    padding-top: 115px;
+    padding-bottom: 40px;
+}
+
+.footer__allrights{
+    margin-top: 60px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/* Медиа - запросы */
+
+@media screen and (max-width: 992px){
+    .logo{
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+
+    .offer{
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .avatar{
+        margin-top: 70px;
+    }
+
+    .edu{
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .skills{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .header{
+        padding-bottom: 100px;
+    }
+
+    .space{
+        width: 30px;
+        height: 30px;
+    }
+
+    .pad{
+        padding-bottom: 80px
+    }
+
+    .about{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+
+    .fa-ellipsis-v{
+        font-size: 0px;
+        margin-right: 0px;
+    }
+
+    .edu__block{
+        padding-bottom: 30px;
+    }
+
+    .footer{
+        padding-top: 70px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .menu{
+        flex-direction: column;
+    }
+
+    .menu__item{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .duties{
+        margin-bottom: 108px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icon{
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .avatar{
+        width: 100%;
+    }
+
+    .vstu{
+        width: 100%;
+    }
+
+    h1, h2, h3, h4, h5{
+        font-weight: 700;
+        font-size: 34px;
+    }
+
+    .duties{
+        font-size: 20px;
+    }
+
+    .edu__uni{
+        font-size: 30px;
+        margin-bottom: 28px;
+    }
+    
+    .edu__ist{
+        font-size: 28px;
+        margin-bottom: 28px;
+    }
+    
+    .edu__year{
+        font-size: 30px;
+    }
+
+    .aboutme__text{
+        font-size: 30px;
+    }
+}
